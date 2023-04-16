@@ -1,0 +1,156 @@
+:root{
+    --bgColor: #fcb44c,
+}
+
+
+
+.PP{
+    position: relative ;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgb(200, 219, 253),whitesmoke);
+}
+.homeBx{
+    position: relative;
+    display: grid ;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));    
+    grid-gap: 20px;
+    top: 100px ;
+}
+.banner{
+    width: 90% ;
+    margin: 0 auto;
+    position: relative;
+    display: flex ;
+    align-items: center ;
+    justify-content: center;
+}
+.container{
+    position: absolute ;
+    width: 100% ;
+    height: 200px ;
+
+}
+.container #scene{
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+    height: 100%;
+}
+.container #scene #text{
+    position: absolute ;
+    display: flex ;
+    position: relative ;
+    color: #fdfcc9 ;
+    font-size: 14vw ;
+    z-index: 100 ;
+}
+.container #scene #text span{
+    position: relative ;
+    display: inline-block ;
+    text-shadow: 1px 1px 0 #e1e1e1,
+    2px 2px 0 #e1e1e1,
+    3px 3px 0 #e1e1e1,
+    4px 4px 0 #e1e1e1,
+    5px 5px 0 #e1e1e1,
+    6px 6px 0 #e1e1e1,
+    7px 7px 0 #e1e1e1,
+    8px 8px 0 #e1e1e1,
+    25px 35px 0 rgba(0, 0, 0, 0.1)
+    ;
+}
+.adopt{
+    position: relative ;
+    top: 30px;
+    height: 100px ;
+}
+.adopt h3{
+    position: relative;
+    width: 90% ;
+    margin: 0 auto;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+.adoptButton {
+    position: relative;
+    width: 150px ;
+    height: 50px;
+    border-radius: 30px;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    cursor: pointer;
+    background: rgb(197, 24, 24);
+    margin: 0 auto ;
+    color: whitesmoke;
+    top: 30px;
+}
+
+.petBx{
+    width: 90% ;
+    display: flex ;
+    align-items: center ;
+    justify-content: end;
+}
+
+.imgPet1, .imgPet2{
+    position: relative;
+    width: 350px ;
+    height: 350px;
+    display: flex;
+}
+.imgPet1{
+    border-radius: 30% 70% 53% 47% / 55% 38% 62% 45% ;
+    background-image: url(./pet1.jpg);
+    background-size: cover;
+    top: 100px;
+}
+.imgPet2{
+    width: 450px ;
+    border-radius: 54% 46% 19% 81% / 17% 45% 55% 83% ;
+    background-image: url(./pet2.jpg);
+    background-size: cover;
+}
+
+
+@media (max-width : 992px) {
+
+    .homeBx{
+        display: block;
+    }
+    .container{
+        position: relative ;
+        height: 200px ;
+    }
+
+    .container #scene #text{
+        position: absolute ;
+        font-size: 7em ;
+    }
+
+    .adopt{
+        top: 350px;
+    }
+
+    .adoptButton {
+        top: 30px;
+    }
+    
+    .imgPet1, .imgPet2{
+        position: relative;
+        width: 200px ;
+        height: 200px;
+    }
+    .imgPet1{
+        background-position-x: left;
+        top: 100px;
+    }
+    .imgPet2{
+        width: 150px ;
+        background-position-x: center;
+    }
+    
+
+
+}
