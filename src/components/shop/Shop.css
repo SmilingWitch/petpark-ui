@@ -1,0 +1,45 @@
+.ShopCont {
+    display: grid ;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));    
+    grid-gap: 5px;
+    height: 100vh;
+    z-index: -3;
+    background: linear-gradient(rgb(200, 219, 253),rebeccapurple );
+}
+
+.shopHeader{
+    position: relative ;
+    width: 100%;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    
+}
+.shopH h2{
+    font-size: 5em ;
+}
+.shopH .buttonStore{
+    position: relative;
+    width: 150px ;
+    height: 50px;
+    border-radius: 30px;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    cursor: pointer;
+    background: rgb(197, 24, 24);
+    margin: 0 auto ;
+    color: whitesmoke;
+    top: 30px;
+}
+
+@media (max-width : 992px){
+    .shopH h2{
+        font-size: 3em ;
+
+    }
+    .ShopCont {
+        top: 100px;
+        padding: 10px;
+    }
+}
