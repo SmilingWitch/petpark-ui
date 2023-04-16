@@ -1,0 +1,55 @@
+.eventCont{
+    position: relative;
+    width: 100% ;
+    min-height: 100vh ;
+    z-index: 10;
+    display: grid ;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));    
+    grid-gap: 20px;
+}
+
+.headerEvent{
+    display: flex ;
+    align-items: center ;
+    justify-content: center;
+    font-size: 3em;
+}
+.headerEvent h2{
+    width: 200px;
+}
+
+.EventBx{
+    position: relative ;
+    width: 90% ;
+    height: 100%;
+    margin: 0 auto;
+    display: flex ;
+    align-items: center ;
+    justify-content: center;
+    
+}
+
+@media (max-width : 992px){
+
+    .eventCont{
+            
+        display: block;
+        align-items: center ;
+        justify-content: center;
+        top: 50px;
+    }
+    .headerEvent{
+        position: relative;
+        font-size: 2em;
+        
+    }
+    .EventBx{
+        display: flex ;
+        align-items: center ;
+        justify-content: center;
+        top: 50px;
+    }    
+
+}
+
+
