@@ -1,0 +1,152 @@
+.b {
+    position: relative ;
+    width: 100% ;
+    min-height: 100vh;
+    background:  whitesmoke;
+}
+.content {
+    position: relative;
+    min-height: 300px;
+    display: grid ;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));    
+    grid-gap: 20px;
+}
+.AP {
+    width: 100% ;
+    min-height: 50px;
+    padding: 100px;
+    display: flex ;
+    align-self: center ;
+    justify-content: center;
+    
+}
+.Bx{
+    min-height: 100px ;
+}
+
+.Bx h2 {
+    color: rgb(255, 217, 0) ;
+    font-size: 5em ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    position: relative ;
+    width: 600px;
+    height: 100px;
+    background: linear-gradient(rgb(255, 217, 0),rgb(200, 219, 253));
+    background-clip: text;
+}
+.p {
+    width: 100% ;
+    min-height: 50px ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    text-align: center;
+    margin: 0 auto;
+}
+.Bx p {
+    width: 50% ;
+}
+
+.gridContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex ;
+    align-items: center ;
+    justify-content: center;
+
+}
+
+.carrusel{
+    width: 100% ;
+    height: 100%;
+    position: relative ;
+    top: 100px;
+}
+.blur1, .blur2{
+    width: 100% ;
+    position: absolute;
+    height: 100px;
+    z-index: 1000;
+}
+.blur1{
+    background: linear-gradient(whitesmoke,transparent);
+}
+.blur2{
+    background: linear-gradient(transparent,whitesmoke);
+    top: -100px;
+    position: relative;
+    
+}
+.more {
+    position: relative ;
+    width: 100% ;
+    height: 50px ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    margin-top: 50px ;
+}
+.icon {
+    position: relative ;
+    display: flex ;
+    font-size: 3em ;
+    align-items: center ;
+    justify-content: center ;
+    top: -100px;
+    z-index: 9;
+}
+.icon a {
+    text-decoration: none ;
+    color: rgba(128, 128, 128, 0.4);
+}
+
+.icon a:hover {
+    color: rgba(73, 120, 255, 0.6)  ;
+}
+
+
+@media (max-width : 992px){
+    .content{
+        display: grid ;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));    
+        grid-gap: 20px;
+    }
+    .AP {
+        width: 100% ;
+        min-height: 50px;
+        padding: 10px;        
+    }
+
+    .Bx h2 {
+        font-size: 3em ;
+    }
+
+    .Bx p {
+        width: 50% ;
+    }
+    
+    .gridContainer {
+        position: relative;
+
+        width: 100%;
+        overflow: hidden;
+    
+    }
+    
+  
+
+    .more {
+        position: relative ;
+        width: 100% ;
+        height: 50px ;
+        display: flex ;
+        align-items: center ;
+        justify-content: center ;
+        margin-top: 50px ;
+    }
+
+
+}
