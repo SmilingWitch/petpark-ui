@@ -1,0 +1,145 @@
+.container1 {
+    position: relative;
+    width: 100%;   
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    height: 100vh;
+    z-index: 2;
+    
+}
+
+.contBx {
+    position: relative;
+    min-width: 300px ;
+    height: 200px;
+    animation: animateCard1 2s ease-in-out 0.02s infinite normal ;
+}
+.cont1{
+    width: 150px ;
+    height: 250px;
+    top: calc(50% - 100px);
+    position: absolute;
+    display: flex ;
+    align-items: center ;
+    justify-content: center;
+    transition: 0.5s ;
+    border-radius: 20px ;
+    overflow: hidden;
+}
+.container1 .cont1:nth-child(1){
+    opacity: 1;
+    background-color: rgba(139, 235, 126, 0.8);
+}
+.container1 .cont1:nth-child(2){
+    opacity: 1;
+    background-color: rgba(240, 236, 45, 0.8);
+}
+.container1 .cont1:nth-child(3){
+    opacity: 1;
+    background-color: rgba(240, 68, 45, 0.8);
+}
+
+ .cont1{
+    position: absolute ;
+    top: 50% ;
+    left: 30% ;
+    z-index: 1 ;
+    opacity: 1;
+    -webkit-box-shadow: 6px 11px 69px 0px rgba(138,164,207,0.61);
+    -moz-box-shadow: 6px 11px 69px 0px rgba(138,164,207,0.61);
+    box-shadow: 6px 11px 69px 0px rgba(138,164,207,0.61);
+    animation: animateCard 2s ease-in-out 0.02s infinite normal ;
+    
+}
+ 
+
+.imgP {
+    position: relative;
+    top: 0 ;
+    left: 0 ;
+    width: 100% ;
+    height: 100% ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center;
+    /*------Card Hover----*/
+    transition: 0.5s ;
+    transform: translate(50px) ;
+    padding: 5px ;
+    opacity: 0;
+}
+
+  .imgP{
+    opacity: 1 ;
+    transform: translate(0px);
+    transition-delay: calc(0.2s * var(--a)) ;
+}
+
+.imgP h2,h1{
+    color: whitesmoke;
+    position: relative ;
+
+}
+.contBx {
+
+    animation: animateCard1 2s ease-in-out 0.02s infinite normal ;
+}
+
+
+@keyframes animateCard {
+    0%{
+        transform:translate(calc(-10px +  calc(200px * var(--z_i))),-50%) rotate(-20deg) skew(0deg,0deg);
+    }
+    50%{
+        transform:translate(calc(-10px +  calc(200px * var(--z_i))),-40%) rotate(-20deg) skew(0deg,0deg);
+    }
+    100%{
+        transform:translate(calc(-10px +  calc(200px * var(--z_i))),-50%) rotate(-20deg) skew(0deg,0deg);
+    }
+    
+}
+@keyframes animateCard1 {
+    0%{
+        transform:translateY(-50%) ;
+    }
+    50%{
+        transform:translateY(-40%) ;
+    }
+    100%{
+        transform:translateY(-50%) ;
+    }
+}
+@media (max-width : 992px){
+    .cont1{
+        width: 100px ;
+        height: 150px;
+    }
+
+    .infoCard h1{
+        font-size: 2em;
+    }
+    .infoCard h2{
+        font-size: 1em;
+    }
+    .cont1{
+
+        animation: animateCard 2s ease-in-out 0.02s infinite normal ;
+        
+    }
+
+    
+@keyframes animateCard {
+    0%{
+        transform:translate(calc(-1px +  calc(130px * var(--z_i))),-40%) rotate(-20deg) skew(0deg,0deg);
+    }
+    50%{
+        transform:translate(calc(-1px +  calc(130px * var(--z_i))),-30%) rotate(-20deg) skew(0deg,0deg);
+    }
+    100%{
+        transform:translate(calc(-1px +  calc(130px * var(--z_i))),-40%) rotate(-20deg) skew(0deg,0deg);
+    }
+    
+}
+
+}
