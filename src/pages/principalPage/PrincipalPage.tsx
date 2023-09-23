@@ -1,13 +1,9 @@
-import Adopciones from "../adopciones/Adopciones";
-import Home from "../home/Home";
+import Adopciones from "../../components/adopciones/Adopciones";
+import Home from "../../components/home/Home";
 import "./PrincipalPage.css";
-import Eventos from "../eventos/Eventos";
-import Shop from "../shop/Shop";
-import Products from "../products/Products";
-
-
-
-
+import Eventos from "../../components/eventos/Eventos";
+import Shop from "../../components/shop/Shop";
+import Noticias from "../../components/noticias/Noticias";
 
 
 
@@ -18,7 +14,7 @@ function PrincipalPage() {
     return  <>
         <div className="Cont" >
             
-            <header  id = "header active">
+            {/*<header  id = "header ">
                 <div className="logo">
                     <h3>LOGO</h3>
                 </div>
@@ -33,7 +29,7 @@ function PrincipalPage() {
                     </ul>
                     <div className = "toggle" onClick = {toggle}> </div>
                 
-            </header>
+</header>*/}
             
                 <section className="a" id="home">
                         <Home/>
@@ -47,11 +43,12 @@ function PrincipalPage() {
                     <Eventos/>
                 </section>
                 <section className="d" id="productos">
-                <Shop/>
+                    <Shop/>
                 </section>
-                <section className="f" id="noticias">noticias</section>
-                <section className="g" id="informacion">informacion</section>
-                <section className="sec contact" id="contactos">contactos</section>
+                <section className="f" id="noticias">
+                    <Noticias/>
+                </section>
+                
 {another()}
             </div>
             </>
