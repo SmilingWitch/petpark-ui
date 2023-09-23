@@ -1,5 +1,7 @@
 import Products from "../products/Products";
+import RedButton from "../redButton/RedButton";
 import "./Shop.css"
+
 
 function Shop() {
     return <>
@@ -7,7 +9,7 @@ function Shop() {
             <div className="shopHeader">
                 <div className="shopH">
                     <h2>Visita nuestra tienda</h2>
-                    <div className="buttonStore">Tienda</div>
+                    <RedButton textButton="Tienda"/>
                 </div>
                 
             </div>
