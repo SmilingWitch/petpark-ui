@@ -1,0 +1,72 @@
+
+.nCard{
+    position: relative;
+    width: 90%;
+    min-height: 200px ;
+    border-radius: 10px;
+    display: grid ;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: 10px ;
+    background: whitesmoke;
+    -webkit-box-shadow: 0px -4px 36px -25px rgba(48,20,77,1);
+    -moz-box-shadow: 0px -4px 36px -25px rgba(48,20,77,1);
+    box-shadow: 0px -4px 36px -25px rgba(48,20,77,1);
+}
+
+
+.imgBx {
+    position: relative;
+    grid-column: 1 ;
+    width: 100%;
+}
+.imgBx img{
+    position: relative ;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px ;
+}
+
+.descript{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    height: 100% ;
+    grid-column: 2/span 2;
+    font-size: 0.8em;
+}
+.descript div{
+    position: relative;
+    width: 100% ;
+    padding: 10px;
+    color: rgb(61, 58, 58);
+}
+.descript .phone{
+   
+    height: 20%;
+}
+.descript .dir{
+    height: 20%;
+}
+.descript .det{
+    height: 80%;
+}
+
+@media (max-width : 992px) {
+    
+.nCard{
+    display: block;
+
+}
+.imgBx {
+    position: relative; 
+    width: 100%;
+    display: flex ;
+    align-items: center ;
+    justify-content: center;
+}
+.descript{
+    padding: 5px;
+}
+}
