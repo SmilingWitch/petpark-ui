@@ -19,7 +19,7 @@ function App() {
     <BrowserRouter>
       <NavBar/>
       <Routes>
-        <Route path="/pets/" element={<PrincipalPage/>} />
+        <Route path="/petpark-ui/" element={<PrincipalPage/>} />
         <Route path="/noticias" element={<NoticiasPag />} />
         <Route path="/adopciones" element={<AdopcionesPag/>} />
         <Route path="/tienda" element={<ShopPag/>} />
