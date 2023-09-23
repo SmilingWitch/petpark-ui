@@ -15,16 +15,14 @@ function App() {
 
   return (
     <div className='App'>
-      
-    <BrowserRouter>
       <NavBar/>
+    <BrowserRouter>
       <Routes>
         <Route path="/petpark-ui/" element={<PrincipalPage/>} />
-        <Route path="/noticias" element={<NoticiasPag />} />
-        <Route path="/adopciones" element={<AdopcionesPag/>} />
-        <Route path="/tienda" element={<ShopPag/>} />
+        <Route path="/petpark-ui/noticias" element={<NoticiasPag />} />
+        <Route path="/petpark-ui/adopciones" element={<AdopcionesPag/>} />
+        <Route path="/petpark-ui/tienda" element={<ShopPag/>} />
       </Routes>
-    
   </BrowserRouter>
   </div>  
   )
