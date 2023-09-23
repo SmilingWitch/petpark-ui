@@ -99,17 +99,7 @@
     }
     
 }
-@keyframes animateCard1 {
-    0%{
-        transform:translateY(-50%) ;
-    }
-    50%{
-        transform:translateY(-40%) ;
-    }
-    100%{
-        transform:translateY(-50%) ;
-    }
-}
+
 @media (max-width : 992px){
     .cont1{
         width: 100px ;
@@ -123,13 +113,13 @@
         font-size: 1em;
     }
     .cont1{
-
-        animation: animateCard 2s ease-in-out 0.02s infinite normal ;
+        top: 0;
+        animation: animateCard1 2s ease-in-out 0.02s infinite normal ;
         
     }
 
     
-@keyframes animateCard {
+@keyframes animateCard1 {
     0%{
         transform:translate(calc(-1px +  calc(130px * var(--z_i))),-40%) rotate(-20deg) skew(0deg,0deg);
     }
