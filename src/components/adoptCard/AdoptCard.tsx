@@ -1,4 +1,4 @@
-import img1 from "./img1.jpg";
+import img1 from "/1.jpeg";
 import "./AdoptCard.css"
 
 function AdoptCard() {
