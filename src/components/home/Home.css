@@ -2,6 +2,17 @@
     --bgColor: #fcb44c,
 }
 
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('./Poppins-Bold.ttf') format('truetype');
+  }
+
+/*.particles{
+    position: absolute ;
+    width: 500px ;
+    height: 100vh ;
+    background: gold;
+}*/
 
 
 .PP{
@@ -48,6 +59,7 @@
 .container #scene #text span{
     position: relative ;
     display: inline-block ;
+    font-family: 'Poppins-Bold', sans-serif;
     text-shadow: 1px 1px 0 #e1e1e1,
     2px 2px 0 #e1e1e1,
     3px 3px 0 #e1e1e1,
@@ -71,21 +83,9 @@
     display: flex ;
     align-items: center ;
     justify-content: center ;
+    margin-bottom: 30px;
 }
-.adoptButton {
-    position: relative;
-    width: 150px ;
-    height: 50px;
-    border-radius: 30px;
-    display: flex ;
-    align-items: center ;
-    justify-content: center ;
-    cursor: pointer;
-    background: rgb(197, 24, 24);
-    margin: 0 auto ;
-    color: whitesmoke;
-    top: 30px;
-}
+
 
 .petBx{
     width: 90% ;
@@ -133,10 +133,6 @@
         top: 350px;
     }
 
-    .adoptButton {
-        top: 30px;
-    }
-    
     .imgPet1, .imgPet2{
         position: relative;
         width: 200px ;
